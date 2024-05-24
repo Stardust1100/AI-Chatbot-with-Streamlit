@@ -251,3 +251,17 @@ fabric.properties
 .idea/AI-Chatbot-with-Streamlit.iml
 .idea/modules.xml
 .idea/inspectionProfiles/profiles_settings.xml
+/.github/
+
+#manually added
+/.streamlit/
+/.devcontainer/
+/.idea/
+/.vscode/
+/.venv/
+
+
+
+
+
+
