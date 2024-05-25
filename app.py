@@ -1,28 +1,12 @@
-# Python
 import streamlit as st
 import pandas as pd
-
+import numpy as np
 
 def main():
     st.title("Hello World!")
+    st.write("Here's our first attempt at using data to create a table:")
+    df = pd.DataFrame(np.random.randn(10, 2), columns=['x', 'y'])
+    st.bar_chart(df)
 
-
-   # Add a select box to the sidebar
-    option = st.sidebar.selectbox(
-        'How would you like to greet the world?',
-        ('Hello', 'Hi', 'Hey', 'Hola', 'Bonjour', 'Ciao'))
-    
-    st.write("Welcome to this simple Streamlit app.")
-
-    # Use the selected option to display a greeting
-    st.write(f"{option}, welcome to this simple Streamlit app.")
-
-
-sample = pd.DataFrame({
-  'Fruit': ['Apples', 'Oranges', 'Bananas'],
-  'Quantity': [10, 20, 15],
-
-})
-
-st.bar_chart(sample)
-
+if __name__ == "__main__":
+    main()

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#to change the default shell to bash.
-#chsh -s /bin/bash
 
 # Make the script executable
 sudo chmod +x install_packages.sh
@@ -22,5 +20,6 @@ if [ "$pip_version" != "$latest_pip_version" ]; then
     pip install --upgrade pip
 fi
 
+# move this to another script
 # Install packages from requirements.txt
 pip install -r requirements.txt

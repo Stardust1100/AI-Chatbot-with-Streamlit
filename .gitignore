@@ -253,12 +253,14 @@ fabric.properties
 .idea/inspectionProfiles/profiles_settings.xml
 /.github/
 
-#manually added
+#manually added below
 /.streamlit/
 /.devcontainer/
 /.idea/
 /.vscode/
 /.venv/
+./.DS_Store
+.DS_Store
 
 
 
